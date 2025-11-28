@@ -9,6 +9,11 @@ Dynamic Form Builder is a full-stack web application designed to generate forms 
 - **frontend/**: Contains the Next.js application, including UI components, pages, and client-side logic.
 - **backend/**: Contains the Node.js Express server, API endpoints, and in-memory database logic.
 
+## Deployment
+
+- **Backend**: Deployed on Vercel
+- **Frontend**: Deployed on Vercel
+
 ## Prerequisites
 
 - Node.js (v18 or higher recommended)

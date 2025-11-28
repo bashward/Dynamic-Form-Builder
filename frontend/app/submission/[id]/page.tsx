@@ -3,7 +3,7 @@ import Navbar from "@/app/components/Navbar";
 
 export default async function EditSubmissionPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
-    const res = await fetch(`http://localhost:5000/submissions/${id}`, { cache: 'no-store' });
+    const res = await fetch(`https://dynamic-form-builder-backend.vercel.app/submissions/${id}`, { cache: 'no-store' });
 
     if (!res.ok) {
         return (

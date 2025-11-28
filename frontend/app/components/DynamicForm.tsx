@@ -24,7 +24,7 @@ import { useToast } from '@/hooks/use-toast';
 
 // Fetch schema
 const fetchSchema = async (): Promise<FormSchema> => {
-    const res = await fetch('http://localhost:5000/form-schema');
+    const res = await fetch('https://dynamic-form-builder-backend.vercel.app/form-schema');
     if (!res.ok) throw new Error('Failed to fetch schema');
     return res.json();
 };
@@ -48,8 +48,8 @@ export default function DynamicForm({ initialData, submissionId, onSuccess }: Dy
     const mutation = useMutation({
         mutationFn: async (data: any) => {
             const url = submissionId
-                ? `http://localhost:5000/submissions/${submissionId}`
-                : 'http://localhost:5000/submissions';
+                ? `https://dynamic-form-builder-backend.vercel.app/submissions/${submissionId}`
+                : 'https://dynamic-form-builder-backend.vercel.app/submissions';
 
             const method = submissionId ? 'PUT' : 'POST';
 

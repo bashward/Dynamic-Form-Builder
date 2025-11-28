@@ -48,13 +48,13 @@ const fetchSubmissions = async (page: number, limit: number, sortBy: string, sor
         sortOrder,
         search,
     });
-    const res = await fetch(`http://localhost:5000/submissions?${params.toString()}`);
+    const res = await fetch(`https://dynamic-form-builder-backend.vercel.app/submissions?${params.toString()}`);
     if (!res.ok) throw new Error('Failed to fetch submissions');
     return res.json();
 };
 
 const deleteSubmission = async (id: string) => {
-    const res = await fetch(`http://localhost:5000/submissions/${id}`, {
+    const res = await fetch(`https://dynamic-form-builder-backend.vercel.app/submissions/${id}`, {
         method: 'DELETE',
     });
     if (!res.ok) throw new Error('Failed to delete submission');

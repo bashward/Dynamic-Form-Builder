@@ -4,6 +4,10 @@
 
 The backend of the Dynamic Form Builder is a Node.js application using the Express framework. It serves the form schema and handles the storage and retrieval of form submissions.
 
+## Deployment
+
+- **Backend**: Deployed on Vercel
+
 ## Technologies Used
 
 - **Runtime**: Node.js

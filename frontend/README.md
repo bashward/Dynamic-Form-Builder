@@ -4,6 +4,10 @@
 
 The frontend of the Dynamic Form Builder is built with Next.js and TypeScript. It provides the user interface for rendering dynamic forms, validating user input, and managing submissions.
 
+## Deployment
+
+- **Frontend**: Deployed on Vercel
+
 ## Technologies Used
 
 - **Framework**: Next.js (App Router)
